@@ -75,7 +75,7 @@ case "${un}" in
     then
       homebrew_prefix_default=/opt/homebrew
     else
-      homebrew_prefix_default=/usr/local
+      homebrew_prefix_default=/opt/homebrew
     fi
     realpath() {
       cd "$(dirname "$1")" && echo "$(pwd -P)/$(basename "$1")"
